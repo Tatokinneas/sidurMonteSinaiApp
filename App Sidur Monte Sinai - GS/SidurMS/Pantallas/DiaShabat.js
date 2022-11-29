@@ -1,7 +1,7 @@
 import React from 'react'
 import { Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native'
 
-const DíaShabat = ({navigation}) => {
+const DiaShabat = ({navigation}) => {
   return (
     <View style={styles.container}>
     <SafeAreaView>
@@ -25,7 +25,7 @@ const DíaShabat = ({navigation}) => {
   
 }
 
-export default DíaShabat;
+export default DiaShabat;
 
 
 

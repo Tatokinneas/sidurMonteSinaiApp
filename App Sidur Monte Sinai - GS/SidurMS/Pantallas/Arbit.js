@@ -7,7 +7,6 @@ const Arbit = ({navigation}) => {
     <SafeAreaView>
       <ScrollView>
   
-  
     <Text style ={styles.titulo}>ARBIT</Text>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF")}><Text style ={styles.textoDeLosBotones}>Arbit de Jol y Motzae Shabat</Text></Pressable>
     <Pressable style ={styles.button} onPress = {()=> navigation.navigate("PDF") }><Text style ={styles.textoDeLosBotones}>Keriat Shema Shel Amita</Text></Pressable>

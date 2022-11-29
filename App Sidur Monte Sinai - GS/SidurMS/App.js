@@ -1,27 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { Button, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, Touchable, TouchableOpacity, View,} from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { useFonts} from 'expo-font'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from "./Pantallas/Home";
-import Shajrit from "./Pantallas/Shajrit";
-import Minja from "./Pantallas/Minja";
+import { useFonts } from 'expo-font';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Header from './Componentes/Header';
 import Arbit from "./Pantallas/Arbit";
-import NocheShabat from "./Pantallas/Noche Shabat";
-import DiaShabat from "./Pantallas/Día Shabat";
-import RoshJodesh from "./Pantallas/Rosh Jodesh";
-import ShaloshRegalim from "./Pantallas/Shalosh Regalim";
-import Perashot from "./Pantallas/Perashot";
-import Otros from "./Pantallas/Otros";
-import Januca from "./Pantallas/Januca";
+import Ayunos from "./Pantallas/Ayunos";
 import Boda from "./Pantallas/Boda";
 import BritMila from "./Pantallas/Brit Mila";
-import Ayunos from "./Pantallas/Ayunos";
+import DiaShabat from "./Pantallas/DiaShabat";
+import Home from "./Pantallas/Home";
 import Izkor from "./Pantallas/Izkor";
-import PDF from "./Pantallas/VerPDF";
+import Januca from "./Pantallas/Januca";
+import Minja from "./Pantallas/Minja";
+import NocheShabat from "./Pantallas/NocheShabat";
+import Otros from "./Pantallas/Otros";
+import Perashot from "./Pantallas/Perashot";
+import RoshJodesh from "./Pantallas/Rosh Jodesh";
 import ShabatonimDiferentes from "./Pantallas/Shabatonim Diferentes";
-import Header from './Componentes/Header';
+import Shajrit from "./Pantallas/Shajrit";
+import ShaloshRegalim from "./Pantallas/Shalosh Regalim";
+import PDF from "./Pantallas/VerPDF";
 
 
 const Stack = createNativeStackNavigator();
