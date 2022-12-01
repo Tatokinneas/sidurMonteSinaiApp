@@ -558,19 +558,19 @@ import tefilaShalomAlIsrael2 from "../assets/Photos/SIDUR-526.png";
 import Boda1 from "../assets/Photos/SIDUR-527.png";
 import Boda2 from "../assets/Photos/SIDUR-528.png";
 import Boda3 from "../assets/Photos/SIDUR-529.png";
-import nacimientoVaron1 from "../assets/Photos/SIDUR-530.png";
-import nacimientoVaron2 from "../assets/Photos/SIDUR-531.png";
-import nacimientoVaron3 from "../assets/Photos/SIDUR-532.png";
-import nacimientoVaron4 from "../assets/Photos/SIDUR-533.png";
-import nacimientoVaron5 from "../assets/Photos/SIDUR-534.png";
-import nacimientoVaron6 from "../assets/Photos/SIDUR-535.png";
-import nacimientoVaron7 from "../assets/Photos/SIDUR-536.png";
-import nacimientoVaron8 from "../assets/Photos/SIDUR-537.png";
-import nacimientoVaron9 from "../assets/Photos/SIDUR-538.png";
-import nacimientoVaron10 from "../assets/Photos/SIDUR-539.png";
-import nacimientoVaron11 from "../assets/Photos/SIDUR-540.png";
-import nacimientoVaron12 from "../assets/Photos/SIDUR-541.png";
-import nacimientoVaron13 from "../assets/Photos/SIDUR-542.png";
+import britMila1 from "../assets/Photos/SIDUR-530.png";
+import britMila2 from "../assets/Photos/SIDUR-531.png";
+import britMila3 from "../assets/Photos/SIDUR-532.png";
+import britMila4 from "../assets/Photos/SIDUR-533.png";
+import britMila5 from "../assets/Photos/SIDUR-534.png";
+import britMila6 from "../assets/Photos/SIDUR-535.png";
+import britMila7 from "../assets/Photos/SIDUR-536.png";
+import britMila8 from "../assets/Photos/SIDUR-537.png";
+import britMila9 from "../assets/Photos/SIDUR-538.png";
+import pidionHaben1 from "../assets/Photos/SIDUR-539.png";
+import pidionHaben2 from "../assets/Photos/SIDUR-540.png";
+import pidionHaben3 from "../assets/Photos/SIDUR-541.png";
+import pidionHaben4 from "../assets/Photos/SIDUR-542.png";
 import berajot1 from "../assets/Photos/SIDUR-543.png";
 import berajot2 from "../assets/Photos/SIDUR-544.png";
 import berajot3 from "../assets/Photos/SIDUR-545.png";
@@ -990,7 +990,7 @@ const VerPDF = ({ navigation, route }) => {
     { id: 20, image: arbitShabat20 },
   ]);
 
-  const [kidush, setkidush] = useState([
+  const [Kidush, setKidush] = useState([
     { id: 1, image: Kidush1 },
     { id: 2, image: Kidush2 },
     { id: 3, image: Kidush3 },
@@ -1339,21 +1339,25 @@ const VerPDF = ({ navigation, route }) => {
     { id: 3, image: Boda3 },
   ]);
 
-  const [nacimientoVaron, setnacimientoVaron] = useState([
-    { id: 1, image: nacimientoVaron1 },
-    { id: 2, image: nacimientoVaron2 },
-    { id: 3, image: nacimientoVaron3 },
-    { id: 4, image: nacimientoVaron4 },
-    { id: 5, image: nacimientoVaron5 },
-    { id: 6, image: nacimientoVaron6 },
-    { id: 7, image: nacimientoVaron7 },
-    { id: 8, image: nacimientoVaron8 },
-    { id: 9, image: nacimientoVaron9 },
-    { id: 10, image: nacimientoVaron10 },
-    { id: 11, image: nacimientoVaron11 },
-    { id: 12, image: nacimientoVaron12 },
-    { id: 13, image: nacimientoVaron13 },
+  const [britMila, setbritMila] = useState([
+    { id: 1, image: britMila1 },
+    { id: 2, image: britMila2 },
+    { id: 3, image: britMila3 },
+    { id: 4, image: britMila4 },
+    { id: 5, image: britMila5 },
+    { id: 6, image: britMila6 },
+    { id: 7, image: britMila7 },
+    { id: 8, image: britMila8 },
+    { id: 9, image: britMila9 }]);
+
+    const [pidionHaben, setpidionHaben] = useState ([
+    { id: 1, image: pidionHaben1 },
+    { id: 2, image: pidionHaben2 },
+    { id: 3, image: pidionHaben3 },
+    { id: 4, image: pidionHaben4 },
   ]);
+
+  
 
   const [berajot, setberajot] = useState([
     { id: 1, image: berajot1 },
@@ -1507,214 +1511,216 @@ const VerPDF = ({ navigation, route }) => {
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "Amida":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = Amida;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "Kave":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = Kave;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "Korbanot":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = Korbanot;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "AshreM":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = AshreM;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "yehiShem":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = yehiShem;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "arbit":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = arbit;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "keriatShema":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = keriatShema;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "shirHashirim":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = shirHashirim;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "kabalatShabat":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = kabalatShabat;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "arbitShabat":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = arbitShabat;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "Kidush":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = Kidush;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "birkatHamazon":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = birkatHamazon;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "shajritShabat":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = shajritShabat;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "petijatHaejal":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = petijatHaejal;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "musaf":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = musaf;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "kidush":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = Kidush;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "minjaShabat":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = minjaShabat;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "Habdalah":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = Habdalah;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "shabatonimDiferentes":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = shabatonimDiferentes;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "Halel":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = Halel;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "seferRoshJodesh":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = seferRoshJodesh;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "musafRoshJodeshJol":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = musafRoshJodeshJol;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "musafRoshJodeshShabat":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = musafRoshJodeshShabat;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "mizmorim":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = mizmorim;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "amidaYomtob":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = amidaYomtob;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "amidaMusaf":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = amidaMusaf;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "bereshit":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = bereshit;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "shemot":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = shemot;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "vaikra":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = vaikra;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "bamidbar":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = bamidbar;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "debarim":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = debarim;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "birkatHalebana":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = birkatHalebana;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "sefiratHaomer":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = sefiratHaomer;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "purim":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = purim;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "birkatHailanot":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = birkatHailanot;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "limudNisan":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = limudNisan;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "tefilaShalomAlIsrael":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = tefilaShalomAlIsrael;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "berajot":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = berajot;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "abelut":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = abelut;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "velas":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = velas;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "seferJanuca":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = seferJanuca;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "shoa":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = shoa;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "yomHazikaron":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = yomHazikaron;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "Boda":
-      rutaDeImagenes = birkatHashajar;
-      rutaDeImagenes = rutaDeImagenes.reverse();
-
-    case "Boda":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = Boda;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "britMila":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = britMila;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "pidionHaben":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = pidionHaben;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "guedalia":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = guedalia;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "asaraBetebet":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = asaraBetebet;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "ayunoEsther":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = ayunoEsther;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "tamuz":
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = tamuz;
       rutaDeImagenes = rutaDeImagenes.reverse();
 
     case "minjaAyuno":
-      rutaDeImagenes = birkatHashajar;
+      rutaDeImagenes = minjaAyuno;
       rutaDeImagenes = rutaDeImagenes.reverse();
   }
   const changeArray = () => {
+    if (ruta === "birkatHashajar") {
+      rutaDeImagenes = kadeshLi;
+    }
+    if (ruta === "birkatHashajar") {
+      rutaDeImagenes = kadeshLi;
+    }
     if (ruta === "birkatHashajar") {
       rutaDeImagenes = kadeshLi;
     }
