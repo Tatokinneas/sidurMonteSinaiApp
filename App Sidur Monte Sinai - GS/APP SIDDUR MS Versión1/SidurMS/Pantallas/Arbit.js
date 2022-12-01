@@ -22,10 +22,6 @@ const Arbit = ({navigation}) => {
 
 export default Arbit;
 
-
-
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
