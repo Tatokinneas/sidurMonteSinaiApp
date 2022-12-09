@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   ScrollView,
   StyleSheet,
+  Text,
   View,
 } from "react-native";
 import Carousel from "react-native-snap-carousel";
@@ -86,7 +87,7 @@ import Shema2 from "../assets/Photos/SIDUR-069.png";
 import Shema3 from "../assets/Photos/SIDUR-070.png";
 import Shema4 from "../assets/Photos/SIDUR-071.png";
 import Shema5 from "../assets/Photos/SIDUR-072.png";
-import Shema6 from "../assets/Photos/SIDUR-073.png";
+import Amida0 from "../assets/Photos/SIDUR-073.png";
 import Amida1 from "../assets/Photos/SIDUR-074.png";
 import Amida2 from "../assets/Photos/SIDUR-075.png";
 import Amida3 from "../assets/Photos/SIDUR-076.png";
@@ -762,10 +763,10 @@ const VerPDF = ({ navigation, route }) => {
     { id: 3, image: Shema3 },
     { id: 4, image: Shema4 },
     { id: 5, image: Shema5 },
-    { id: 6, image: Shema6 },
   ]);
 
   const [Amida, setAmida] = useState([
+    { id: 0, image: Amida0 },
     { id: 1, image: Amida1 },
     { id: 2, image: Amida2 },
     { id: 3, image: Amida3 },
@@ -1492,246 +1493,321 @@ const VerPDF = ({ navigation, route }) => {
   switch (ruta) {
     case "birkatHashajar":
       rutaDeImagenes = birkatHashajar;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      break;
 
     case "kadeshLi":
       rutaDeImagenes = kadeshLi;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      break;
+      
 
     case "Ashre":
       rutaDeImagenes = Ashre;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      break;
 
     case "Ishtabaj":
       rutaDeImagenes = Ishtabaj;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      break;
 
     case "Shema":
       rutaDeImagenes = Shema;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "Amida":
       rutaDeImagenes = Amida;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "Kave":
       rutaDeImagenes = Kave;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "Korbanot":
       rutaDeImagenes = Korbanot;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "AshreM":
       rutaDeImagenes = AshreM;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "yehiShem":
       rutaDeImagenes = yehiShem;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "arbit":
       rutaDeImagenes = arbit;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "keriatShema":
       rutaDeImagenes = keriatShema;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "shirHashirim":
       rutaDeImagenes = shirHashirim;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "kabalatShabat":
       rutaDeImagenes = kabalatShabat;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "arbitShabat":
       rutaDeImagenes = arbitShabat;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "Kidush":
       rutaDeImagenes = Kidush;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "birkatHamazon":
       rutaDeImagenes = birkatHamazon;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "shajritShabat":
       rutaDeImagenes = shajritShabat;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "petijatHaejal":
       rutaDeImagenes = petijatHaejal;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "musaf":
       rutaDeImagenes = musaf;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "kidush":
       rutaDeImagenes = Kidush;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "minjaShabat":
       rutaDeImagenes = minjaShabat;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "Habdalah":
       rutaDeImagenes = Habdalah;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "shabatonimDiferentes":
       rutaDeImagenes = shabatonimDiferentes;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "Halel":
       rutaDeImagenes = Halel;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "seferRoshJodesh":
       rutaDeImagenes = seferRoshJodesh;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "musafRoshJodeshJol":
       rutaDeImagenes = musafRoshJodeshJol;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "musafRoshJodeshShabat":
       rutaDeImagenes = musafRoshJodeshShabat;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "mizmorim":
       rutaDeImagenes = mizmorim;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "amidaYomtob":
       rutaDeImagenes = amidaYomtob;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "amidaMusaf":
       rutaDeImagenes = amidaMusaf;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "bereshit":
       rutaDeImagenes = bereshit;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "shemot":
       rutaDeImagenes = shemot;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "vaikra":
       rutaDeImagenes = vaikra;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "bamidbar":
       rutaDeImagenes = bamidbar;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "debarim":
       rutaDeImagenes = debarim;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "birkatHalebana":
       rutaDeImagenes = birkatHalebana;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "sefiratHaomer":
       rutaDeImagenes = sefiratHaomer;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "purim":
       rutaDeImagenes = purim;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "birkatHailanot":
       rutaDeImagenes = birkatHailanot;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "limudNisan":
       rutaDeImagenes = limudNisan;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "tefilaShalomAlIsrael":
       rutaDeImagenes = tefilaShalomAlIsrael;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "berajot":
       rutaDeImagenes = berajot;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "abelut":
       rutaDeImagenes = abelut;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "velas":
       rutaDeImagenes = velas;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "seferJanuca":
       rutaDeImagenes = seferJanuca;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "shoa":
       rutaDeImagenes = shoa;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "yomHazikaron":
       rutaDeImagenes = yomHazikaron;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "Boda":
       rutaDeImagenes = Boda;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "britMila":
       rutaDeImagenes = britMila;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "pidionHaben":
       rutaDeImagenes = pidionHaben;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "guedalia":
       rutaDeImagenes = guedalia;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "asaraBetebet":
       rutaDeImagenes = asaraBetebet;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "ayunoEsther":
       rutaDeImagenes = ayunoEsther;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "tamuz":
       rutaDeImagenes = tamuz;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      
+      break;
 
     case "minjaAyuno":
       rutaDeImagenes = minjaAyuno;
-      rutaDeImagenes = rutaDeImagenes.reverse();
+      break;
   }
   const changeArray = () => {
     if (ruta === "birkatHashajar") {
-      rutaDeImagenes = kadeshLi;
+      rutaDeImagenes = kadeshLi; 
     }
-    if (ruta === "birkatHashajar") {
-      rutaDeImagenes = kadeshLi;
+    if (ruta === "kadeshLi") {
+      rutaDeImagenes = Ashre;
     }
-    if (ruta === "birkatHashajar") {
-      rutaDeImagenes = kadeshLi;
+    if (ruta === "Ashre") {
+      rutaDeImagenes = Ishtabaj;
+    
+
     }
+
+return( <Carousel
+  layout="default"
+  data={rutaDeImagenes}
+  sliderHeight={height}
+  itemHeight={height}
+  itemWidth={width}
+  sliderWidth={width}
+  slideStyle={{ height: height }}
+  renderItem={({ item, index }) => (
+    <Image
+      source={item.image}
+      key={index}
+      style={{ width: width, height: height }}
+      resizeMode="contain"
+    ></Image>
+  )}
+></Carousel>); 
   };
+
+
+
   return (
-    <SafeAreaView
-      style={{ flex: 1, backgroundColor: "white", alignItems: "center" }}
-    >
-      <View style={{ flex: 1, marginTop: -100, height: height }}>
+<SafeAreaView
+style={{ flex: 1, backgroundColor: "white", alignItems: "center" }}>
+<Pressable style = {styles.button} onPressOut={()=>changeArray()}><Text>Siguiente Rezo</Text></Pressable> 
+<View style={{ flex: 1, marginTop: -100, height: height }}>
         <ScrollView>
-          <Pressable onPress={changeArray} />
+          {changeArray} 
           <Carousel
             layout="default"
             data={rutaDeImagenes}
@@ -1756,46 +1832,62 @@ const VerPDF = ({ navigation, route }) => {
   );
 };
 
+
+
 export default VerPDF;
+
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#BB0D32",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#BB0D32',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   button: {
-    backgroundColor: "#860008",
-    color: "white",
-    paddingVertical: 10,
-    paddingHorizontal: 110,
-    marginVertical: 8,
-    alignItems: "center",
-    borderRadius: 5,
+  backgroundColor: "#860008",
+  color: 'white',
+  paddingVertical: 10,
+  paddingHorizontal: 110,
+  marginVertical: 8,
+  alignItems: 'center',
+  borderRadius: 5,   
   },
   titulo: {
-    textAlign: "center",
+    textAlign: 'center',
     fontSize: 32,
     color: "#1A0D6B",
-    fontFamily: "Noto",
+    fontFamily: 'Noto',
+
   },
   textoDeLosBotones: {
-    color: "white",
+
+    color: 'white',
     fontFamily: "Noto",
     fontSize: 15,
+    
   },
 
   donadores: {
-    textAlign: "center",
+    textAlign: 'center',
     fontSize: 30,
     color: "#1A0D6B",
-    fontFamily: "sans-serif",
+    fontFamily: 'Noto',
+    
+
   },
 
   nota: {
-    paddingVertical: 2,
-    fontSize: 10,
-    color: "white",
+paddingVertical: 2,
+fontSize: 10,
+color: "white",
+
+
+
   },
 });
+
+
+
+
